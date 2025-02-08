@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="taskquery">
+    <h1 id="heading">To-Do List</h1>
+    <input type="text" placeholder="Enter your task" id="task">
+    <select id="type">
+      <option value="professional">Professional Work</option>
+      <option value="personal">Personal Work</option>
+      <option value="emergency">Emergency Work</option>
+    </select>
+    <button type="button" id="add">Add Task</button>
+  </div>
+
+  <div class="display">
+    <div class="category-professional">
+      <h3>Professional Work</h3>
+      <ul id="professional-tasks"></ul>
+    </div>
+    <div class="category-personal">
+      <h3>Personal Work</h3>
+      <ul id="personal-tasks"></ul>
+    </div>
+    <div class="category-emergency">
+      <h3>Emergency Work</h3>
+      <ul id="emergency-tasks"></ul>
+    </div>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>

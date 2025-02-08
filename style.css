@@ -1,0 +1,123 @@
+body{
+  margin:0;
+  padding:20px;
+  text-align:center;
+  background-color: #ecf2f9;
+  color: #333333;
+}
+.taskquery{
+  min-height:150px;
+  width:900px;
+  background-color: #ffffff ;
+  margin:0 auto;
+  border-radius:10px;
+  padding-top:10px;
+}
+.display{
+  color:#ffffff;
+  display:flex;
+  justify-content:space-between;
+  width:900px;
+  margin:0 auto;
+  margin-top:20px;
+  background-color: #ffffff ;
+  
+}
+.display div{
+  min-width:250px;
+  min-height:200px;
+  border: 1px solid black;
+  border-radius:8px;
+  margin:20px;
+}
+inp,button{
+  border:1px solid #dddddd;
+}
+input,#type,#add{
+  width:150px;
+  height:30px;
+  border-radius:15px;
+  margin-left:15px;
+}
+ul{
+  list-style:none;
+}
+li span{  
+  margin-left:-30px;
+  margin-right:45px;;
+}
+.edit,.delete{
+  margin-right:5px;
+  width:60px;
+  height:20px;
+  border-radius:8px;
+  border-style:none;
+} 
+#add{
+  /* background-color: #4caf50; */
+  background-color:#0073e6;
+  color:#ffffff;
+}
+#add:hover{
+  background-color:#005bb5;
+}
+.category-professional,
+.category-personal,
+.category-emergency{
+  background-color: #00366f ;
+}
+.category-professional:hover,
+.category-personal:hover,
+.category-emergency:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+.delete{
+  background:rgb(255, 0, 0);
+  
+}
+.delete:hover{
+  background-color: rgb(216, 12, 12);
+}
+
+
+@media(min-width:601px) and (max-width:1024px){
+  .display{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      
+  }
+    .taskquery {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      gap: 15px;
+      width: 100%;
+      padding: 10px; 
+    }
+
+ h1{
+  width:100%;
+ }
+}
+@media (max-width: 600px) {
+
+  .display {
+    flex-direction: column;
+    width: 100%;
+  }
+  .taskquery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .taskquery input,#type,#add{
+    margin-bottom: 10px;
+    margin:0 auto;
+  }
+}
